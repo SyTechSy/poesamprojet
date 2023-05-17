@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --primary-color : #ff6b6b;
+    --secondary-color: #183661;
+    --secondary-dart-color: #453c5c;
+ 
+    --white-color: #ffffff;
+    --light-bg-color: #f2f3f5;
+    --light-text-color: #7c899a;
+    --border-color: #FFC107;
+    --dart-color: #0a021c;
+
+    --font-small: 15px;
+    --font-smaller: 11px;
+
+    --percent100: 100%;
+    --percent50: 50%;
+
+    --fw3: 300;
+    --fw5: 500;
+    --fw6: 600;
+    --fw7: 700;
+    --fw8: 800;
+
+    --trans-background-color: background-color .3s, color .3s;
+    --trans-background: background-color .3s;
+    --trans-color: color .3s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/* 
+*,::before, ::after {
+    box-sizing: border-box;
+} 
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 1.4;
+    color: var(--dart-color);
+    background-color: var(--white-color);
+}*/
+
+a {
+    text-decoration: none;
+    color: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+
+ul {
+    list-style: none;
+}
+
+
+img {
+    max-width: var(--percent100);
+    vertical-align: middle;
+}
+
+strong {
+    font-weight: var(--fw8);
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input::placeholder {
+    font: inherit;
+}
+
+h1,h2,h3,h4 {
+    font-family: 'Poppins';
+}
+
+h1 {
+    font-size: calc(1.3em + 1vw);
+    font-weight: var(--fw8);
+    line-height: 1;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 1.2em;
+    font: var(--fw7);
+}
+h4 {
+    font-size: 1em;
+    font-weight: var(--fw6);
+}
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nav-toggle i {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-items a:hover {
+    color: var(--secondary-color);
+}
+
+.second-items a:hover {
+    color: var(--light-text-color);
+}
+
+.icon-small, .icon-large {
+    display: flex;
+    align-items: center;
+    padding: 0 0.25em;
+    font-weight: normal;
+}
+
+.icon-small {
+    font-size: 1.25em;
+    margin: auto;
+}
+
+.icon-large {
+    font-size: 1.75em;
+    padding: 0 0.75em 0 0;
+}
+
+.headerpourmoi li > a {
+    display: flex;
+    position: relative;
+    line-height: inherit;
+    transition: var(--trans-color);
+}
+
+.header-top .wrapper {
+    font-size: var(--font-small);
+    font-weight: var(--fw3);
+    justify-content: space-between;
+    line-height: 42px;
+}
+
+.header-top .wrapper ul {
+    gap: 2em;
+}
+
+.header-top li {
+    position: relative;
+}
+
+.header-top ul ul {
+    position: absolute;
+    left: -1em;
+    line-height: 2em;
+    background-color: var(--white-color);
+    border: 1px solid var(--border-color);
+    z-index: 1;
+    display: none;
+}
+
+.header-top .right ul ul li a {
+    padding: 0.25em 1em;
+}
+
+.header-top .right ul ul li.money a {
+    background-color: var(--border-color)   ;
+}
+
+.header-top li:hover ul {
+    display: block;
+}
+
+.info-alert {
+    font-size: 20px;
+    color: var(--secondary-color);
+    transition: 0.5s;
+}
+
+.info-alert:hover {
+    color: red;
+}
+
+/* ==============================================================2222222222 */
+
+.header-two {
+    margin: 20px 100px;
+}
+
+.container-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left,
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-weight: var(--fw8);
+    font-size: 2rem;
+}
+
+.nav-menu {
+    padding-left: 20px;
+}
+
+.nav-listt {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    padding: 0 20px 0 0;
+    position: relative;
+}
+
+.caret {
+    display: flex;
+    align-items: center;
+}
+
+.caret i {
+    padding-left: 5px;
+}
+
+.new a{
+    position: relative;
+}
+
+.new-list .new-items{
+    position: absolute;
+    top: -18px;
+    right: 0;
+    background-color: #ffc107;
+    padding: 1px 5px;
+    border-radius: 5px;
+}
+
+.new-list .new-items a {
+    font-size: 13px;
+}
+
+.heart-icon {
+    margin-right: 50px;
+    position: relative;
+}
+
+.heart-icon i ,
+.shop-icon {
+    font-size: 30px;
+}
+
+.coeur-icon {
+    position: relative;
+}
+
+.panier-list .panier-items {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #ffc107;
+    padding: 2px 7px;
+    border-radius: 50%;
+}
+
+.panier-list .panier-items a {
+    font-size: 12px;
+    font-weight: var(--fw7);
+}
+
+.shop-icon {
+    display: flex;
+    align-items: center;
+}
+
+.container-prix p {
+    font-size: 20px;
+    font-weight: var(--fw6);
+}
+
+.container-prix {
+    margin-left: 10px;
+    line-height: 25px;
+}
+
+.prix-panier-list .prix-panier-items a {
+    font-size: 15px;
+    font-weight: var(--fw6);
+    color: #183661;
+    transition: 0.3s ease-in;
+}
+
+.prix-panier-list .prix-panier-items a:hover {
+    font-weight: var(--fw7);
+}
+
+.nav-close {
+    display: none;
+}
+
+.activeed {
+    color: #183661!important;
+    font-weight: var(--fw7);
+}
+
+.nav-item a:hover {
+    color: #183661;
+}
+
+nav .product {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    left: 0;
+    padding: 1.5em;
+    margin-top: 3px;
+    background-color: #3d4f53;
+    z-index: 999;
+    display: none;
+    box-shadow: rgba(35, 35, 35, 0.2) 0 30px 20px -30px;
+    border-radius: 10px;
+}
+
+nav li.hide-drop:hover .product {
+    display: block;
+}
+
+
+/* ========================= Cote de dropdomw ======================  */
+/* ================= 11111111111111111111111111 ============== */
+.drop_list_medecin {
+    position: absolute;
+    background-color: #183661;
+    width: 200px;
+    border-radius: 5px;
+    left: -50%;
+    display: none;
+    box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.drop_list_medecin::before {
+    content: '';
+    position: absolute;
+    background-color: #183661;
+    width: 10px;
+    height: 10px;
+    left: 66%;
+    top: -4px;
+    transform: rotate(45deg);
+}
+
+
+
+.nav-listt .nav-item:hover .drop_list_medecin {
+    display: block;
+}
+
+.drop_list_medecin .drop_items_medecin {
+    margin: 10px 20px ;
+}
+
+.drop_list_medecin .drop_items_medecin .drop_link_medecin {
+    color: #fff;
+    font-size: 15px;
+}
+/* ====================== 2222222222222222222222222222 ================= */
+
+.drop_list_medecin2 {
+    position: absolute;
+    background-color: #183661;
+    width: 150px;
+    border-radius: 5px;
+    left: 0%;
+    display: none;
+    box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 999999999999;
+}
+
+.nav__link {
+    display: flex;
+    align-items: center;
+}
+
+.nav__link i {
+    padding-left: 5px;
+}
+
+.drop_list_medecin2::before {
+    content: '';
+    position: absolute;
+    background-color: #183661;
+    width: 10px;
+    height: 10px;
+    left: 65%;
+    top: -2px;
+    transform: rotate(45deg);
+}
+
+.nav-listt .nav-item:hover .drop_list_medecin2 {
+    display: block;
+}
+
+.drop_list_medecin2 .drop_items_medecin2 {
+    margin: 10px 20px ;
+}
+
+.drop_list_medecin2 .drop_items_medecin2 .drop_link_medecin2 {
+    color: #fff;
+    font-size: 15px;
+}
+
+/* =================================== HEADER 3 ================================ */
+
+.header-tree {
+    background-color: #22780F;
+    height: 80px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.form_search {
+    display: flex;
+    align-items: center;
+}
+
+/* .all-categorie a {
+    line-height: 100px;
+    color: #000;
+    font-size: 20px;
+    font-weight: var(--fw6);
+    letter-spacing: 0.60px;
+    margin-left: 40px;
+    background-color: #FFC107;
+    padding: 15px 40px;
+    border-radius: 5px;
+} */
+
+.recherche_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 80px;
+}
+
+.form_search .input_search {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    font-size: 17px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-bottom: 15px;
+}
+
+
+.dropdom_link{
+    background: var(--border-color);
+    padding: 13.5px 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.3s ease-in-out;
+    z-index: 10;
+}
+
+.input_search:focus {
+    border: 3px solid #FFC107;
+    background: #94949404;
+    color: #fff;
+}
+
+.dropdom_link:hover {
+    background-color: #e9b004;
+}
+
+/* ==================== search DROP ============ */
+
+.dropdom_items {
+    position: relative;
+}
+
+.search_drop_container {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 90%;
+}
+
+.search_drop {
+    width: 100%;
+    height: 50vh;
+    background-color: #eee;
+    border-radius: 5px;
+    line-height: 30px;
+    overflow: auto;
+    box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.5);
+    display: none;
+    position: relative;
+    z-index: 9999999999999999999;
+}
+
+.search_drop::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #eee;
+    top: -3px;
+    right: 22px;
+    transform: rotate(45deg);
+}
+
+.search_drop .search_link_drop {
+    display: block;
+    margin: 5px 10px;
+}
+
+.ferme_search_drop {
+    position: sticky;
+    bottom: -1px;
+    background-color: var(--border-color);
+    width: 100%;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.ferme_search_drop a {
+    color: #000;
+    display: flex;
+    justify-content: center;
+    font-weight: var(--fw5  );
+}
+
+.ferme_search_drop i {
+    padding-left: 5px;
+}
+
+/* ============ ACTIVE SEARCH DROPDOM ============= */
+.active-searh_drop {
+    display: block;
+    transition: 1s;
+}
+
+
